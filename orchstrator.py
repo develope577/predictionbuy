@@ -217,8 +217,9 @@ if __name__ == "__main__":
         "db_name": os.getenv("MONGO_DB_NAME"),
         "collection_name": os.getenv("MONGO_COLLECTION"),
         "suggested_trades_collection": os.getenv("SUGGESTED_TRADES_COLLECTION"),
-        "coins_file": os.getenv("COINS_FILE"),
-        "model_file": os.getenv("MODEL_FILE")
+        "coins_file": os.getenv("coins_file"),
+        "model_file": os.getenv("model_file")
     }
 
     orchestrator_stage2(config)
+
